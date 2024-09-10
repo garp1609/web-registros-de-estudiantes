@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Estudiantes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="form-container">
+        <h1>Registro de Estudiantes</h1>
+        <form id="studentForm">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            <br>
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido" required>
+            <br>
+            <label for="matricula">Matrícula:</label>
+            <input type="text" id="matricula" name="matricula" required>
+            <br>
+            <label for="materia">Materia:</label>
+            <input type="text" id="materia" name="materia" required>
+            <br>
+            <label for="nota">Nota:</label>
+            <input type="text" id="nota" name="nota" required>
+            <br>
+            <input type="hidden" id="rowIndex" name="rowIndex">
+            <button type="submit" class="btn-submit">Agregar</button>
+        </form>
+        <table id="studentsTable">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                    <th>Matricula</th>
+                    <th>Materia</th>
+                    <th>Nota</th>
+                    <th>Accion</th>
+                </tr>
+            </thead>
+            <tbody>
+          
+            </tbody>
+        </table>
+    </div>
+    <div class="image-container">
+        <img src="itla.jpg" alt="ITLA" style="width: 100%; height: auto;">
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
